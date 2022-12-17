@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: rgb(25, 169, 212);
 }
 
 form {
@@ -7,14 +8,29 @@ form {
     display: inline-block;
 }
 
+fieldset {
+    border: thick solid black;
+}
+
+button {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+}
+
 table {
-    border: thick solid grey;
+    border: thick solid black;
     border-collapse: collapse;
     width: 100%;
     margin-top: 25px;
+    color: white;
 }
 
 th, td {
-    border: thin solid black;
+    border: solid black;
     padding: 8px;
 }
+
+

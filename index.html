@@ -13,20 +13,36 @@
         <fieldset>
             <legend>Roll Roll Roll Your Dice</legend>
             <p>Dice Quantity (1, 2, 3)</p>
-            <input type="number" min="1" max="3" id="diceQuantity">
+            <input type="number" id="diceQuantity">
             <p>Roll Amount</p>
             <input type="number" id="rollAmount">
             <br><br>
-            <input type="submit" onclick="getInfo();">
         </fieldset>
     </form>
-
+    <button onclick="getInfo();">Submit</button>
     <table>
         <tr id="rollResult">
             <th>Roll Result</th>
         </tr>
         <tr  id="frequency">
             <th>Frequency</th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Doubles</th>
+            <th>Triples</th>
+            <th>Mean</th>
+            <th>Median</th>
+            <th>Mode</th>
+        </tr>
+        <tr>
+            <td id="doubles"></td>
+            <td id="triples"></td>
+            <td id="mean"></td>
+            <td id="median"></td>
+            <td id="mode"></td>
         </tr>
     </table>
 </body>
