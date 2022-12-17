@@ -96,6 +96,7 @@ function calcMean() {
         sum += rollList[i];
     }
     mean = sum / rollList.length;
+    mean = Math.round(mean * 100) / 100;
 }
 
 function calcMedian() {
