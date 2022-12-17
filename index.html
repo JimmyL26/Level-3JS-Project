@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="initialize();">
+    <form>
+        <fieldset>
+            <legend>Roll Roll Roll Your Dice</legend>
+            <p>Dice Quantity (1, 2, 3)</p>
+            <input type="number" min="1" max="3" id="diceQuantity">
+            <p>Roll Amount</p>
+            <input type="number" id="rollAmount">
+            <br><br>
+            <input type="submit" onclick="getInfo();">
+        </fieldset>
+    </form>
+
+    <table>
+        <tr id="rollResult">
+            <th>Roll Result</th>
+        </tr>
+        <tr  id="frequency">
+            <th>Frequency</th>
+        </tr>
+    </table>
+</body>
+</html>
